@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run: npm i
       - run: npm run lint
+      - run: npm audit fix
   test:
     docker:
       - image: circleci/node:13.8.0
